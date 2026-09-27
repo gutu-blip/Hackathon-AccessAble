@@ -1,0 +1,148 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "opportunities": {
+      ".read": true,
+      ".write": false,
+      "$opportunityId": {
+        // Public demo access: anyone can create, edit, or delete a listing.
+        // Creates and updates are shape-validated below; deletes only need
+        // write permission (.validate is bypassed for deletes).
+        // For a locked-down production backend, scope .write to the owning
+        // user / an admin custom claim instead of `true`.
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['schemaVersion', 'status', 'basic', 'logistics', 'accessibility', 'details', 'meta'])",
+        "schemaVersion": { ".validate": "newData.val() == 1" },
+        "status": { ".validate": "newData.val() == 'pending_review'" },
+        "basic": {
+          ".validate": "newData.hasChildren(['title', 'category', 'organization'])",
+          "title": { ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 120" },
+          "category": { ".validate": "newData.val() == 'job' || newData.val() == 'event' || newData.val() == 'grant' || newData.val() == 'training' || newData.val() == 'aid' || newData.val() == 'public'" },
+          "organization": {
+            ".validate": "newData.hasChildren(['name'])",
+            "name": { ".validate": "newData.isString() && newData.val().length > 0" },
+            "website": { ".validate": "!newData.exists() || newData.val() == null || newData.isString()" },
+            "logo": {
+              ".validate": "!newData.exists() || newData.val() == null || newData.hasChildren(['storagePath', 'downloadURL'])",
+              "name": { ".validate": true },
+              "contentType": { ".validate": true },
+              "size": { ".validate": "newData.isNumber() && newData.val() <= 5242880" },
+              "storagePath": { ".validate": "newData.isString()" },
+              "downloadURL": { ".validate": "newData.isString()" },
+              "$other": { ".validate": false }
+            },
+            "$other": { ".validate": false }
+          },
+          "$other": { ".validate": false }
+        },
+        "logistics": {
+          ".validate": "newData.hasChildren(['deliveryMode', 'applicationDeadline'])",
+          "deliveryMode": { ".validate": "newData.val() == 'remote' || newData.val() == 'onsite' || newData.val() == 'hybrid'" },
+          "venueAddress": { ".validate": true },
+          "applicationDeadline": { ".validate": "newData.isString()" },
+          "startDate": { ".validate": true },
+          "compensation": { ".validate": true },
+          "$other": { ".validate": false }
+        },
+        "accessibility": {
+          ".validate": "newData.hasChildren(['features', 'coordinator'])",
+          "features": {
+            ".validate": "newData.hasChildren()",
+            "$feature": { ".validate": "newData.isBoolean()" }
+          },
+          "notes": { ".validate": true },
+          "coordinator": {
+            ".validate": "newData.hasChildren(['name', 'contact'])",
+            "name": { ".validate": "newData.isString() && newData.val().length > 0" },
+            "contact": { ".validate": "newData.isString() && newData.val().length > 0" },
+            "noticePeriod": { ".validate": true },
+            "$other": { ".validate": false }
+          },
+          "$other": { ".validate": false }
+        },
+        "details": {
+          ".validate": "newData.hasChildren(['descriptionMarkdown', 'applicationUrl'])",
+          "descriptionMarkdown": { ".validate": "newData.isString() && newData.val().length > 0" },
+          "applicationUrl": { ".validate": "newData.isString() && newData.val().length > 0" },
+          "multimodalSupport": { ".validate": "newData.isBoolean()" },
+          "pledgeAccepted": { ".validate": "newData.val() == true" },
+          "$other": { ".validate": false }
+        },
+        "meta": {
+          ".validate": "newData.hasChildren(['submittedAt'])",
+          "createdAt": { ".validate": true },
+          "submittedAt": { ".validate": "newData.isString()" },
+          "$other": { ".validate": false }
+        },
+        "$other": { ".validate": false }
+      }
+    },
+    "users": {
+      ".read": false,
+      "$uid": {
+        // User profiles for persons with disabilities / caregivers.
+        // Anyone signed in can read a profile (needed for verification
+        // review); only the owner (auth.uid === $uid) can write it.
+        // For fully private profiles, change ".read" to
+        // "auth != null && auth.uid == $uid".
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid == $uid",
+        ".validate": "newData.hasChildren(['schemaVersion', 'auth', 'role', 'identity', 'disability', 'emergencyContact', 'verification', 'preferences', 'meta'])",
+        "schemaVersion": { ".validate": "newData.val() == 1" },
+        "auth": {
+          "uid": { ".validate": "newData.val() == $uid" },
+          "email": { ".validate": true },
+          "displayName": { ".validate": true },
+          "photoURL": { ".validate": true },
+          "$other": { ".validate": false }
+        },
+        "role": { ".validate": "newData.val() == 'pwd' || newData.val() == 'caregiver' || newData.val() == 'both'" },
+        "identity": {
+          "fullName": { ".validate": "newData.isString() && newData.val().length >= 2" },
+          "dateOfBirth": { ".validate": true },
+          "gender": { ".validate": true },
+          "phone": { ".validate": true },
+          "county": { ".validate": true },
+          "languages": { ".validate": true },
+          "$other": { ".validate": false }
+        },
+        "disability": { ".validate": true },
+        "caregiving": { ".validate": true },
+        "emergencyContact": {
+          "name": { ".validate": "newData.isString() && newData.val().length >= 2" },
+          "phone": { ".validate": "newData.isString() && newData.val().length >= 7" },
+          "relationship": { ".validate": true },
+          "$other": { ".validate": false }
+        },
+        "verification": {
+          "method": { ".validate": "newData.isString()" },
+          "referenceNumber": { ".validate": true },
+          "document": { ".validate": true },
+          "attestAccurate": { ".validate": "newData.val() == true" },
+          "consentContact": { ".validate": "newData.val() == true" },
+          "status": { ".validate": true },
+          "submittedAt": { ".validate": "newData.isString()" },
+          "$other": { ".validate": false }
+        },
+        "preferences": { ".validate": true },
+        "meta": {
+          "createdAt": { ".validate": true },
+          "updatedAt": { ".validate": "newData.isString()" },
+          "completedAt": { ".validate": true },
+          "profileComplete": { ".validate": "newData.val() == true" },
+          "$other": { ".validate": false }
+        },
+        "$other": { ".validate": false }
+      }
+    },
+    "saved": {
+      ".read": true,
+      "$opportunityId": {
+        ".write": true,
+        ".validate": "newData.isBoolean() || newData.isString()"
+      }
+    }
+  }
+}

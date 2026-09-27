@@ -1,0 +1,296 @@
+{
+  "-P29TjleAnXPMD99q0Vm": {
+    "accessibility": {
+      "coordinator": {
+        "contact": "accommodations@kenyainclusivetech.org",
+        "name": "Grace M",
+        "noticePeriod": "At least 3 business days"
+      },
+      "features": {
+        "audio_descriptions": true,
+        "braille_materials": false,
+        "camera_optional": false,
+        "cart_captions": true,
+        "hearing_loop": false,
+        "mobility_parking": false,
+        "mobility_restrooms": true,
+        "mobility_stepfree": true,
+        "pre_agenda": false,
+        "quiet_room": false,
+        "screen_reader_docs": true,
+        "sli_support": true
+      },
+      "notes": {
+        "hearing": "Two KSL interpreters for all-hands; transcript shared within 2 hours",
+        "sensory": "Flicker-free calls, sensory breaks every 45 mins",
+        "vision": "Slides and handouts emailed 48hrs prior with full ALT text"
+      }
+    },
+    "basic": {
+      "category": "job",
+      "organization": {
+        "name": "Kenya Inclusive Tech Trust",
+        "website": "https://kenyainclusivetech.org"
+      },
+      "title": "Junior Frontend Developer (Remote) — Inclusive Tech Cohort 2026"
+    },
+    "details": {
+      "applicationUrl": "https://kenyainclusivetech.org/apply/frontend-2026",
+      "descriptionMarkdown": "## About the Role\nWe are hiring a Junior Frontend Developer to build accessible web interfaces for our community platform.\n\n## Responsibilities\n- Build responsive pages with React and Tailwind\n- Test components with NVDA and VoiceOver\n- Fix WCAG 2.2 AA issues flagged in audits\n\n## What We Offer\n- Remote-first, flexible hours\n- Screen-reader stipend and home-office setup\n- Mentorship from senior accessibility engineers\n\nPersons with disabilities and neurodivergent individuals are strongly encouraged to apply.",
+      "multimodalSupport": false,
+      "pledgeAccepted": true
+    },
+    "logistics": {
+      "applicationDeadline": "2026-12-15",
+      "compensation": "Ksh 75000",
+      "deliveryMode": "remote",
+      "startDate": "2027-01-15"
+    },
+    "meta": {
+      "createdAt": 1790103454707,
+      "submittedAt": "2026-09-22T18:57:32.779Z"
+    },
+    "schemaVersion": 1,
+    "status": "pending_review"
+  },
+  "-P29YXonrz8Xpsqk8SMU": {
+    "accessibility": {
+      "coordinator": {
+        "contact": "info@inable.org",
+        "name": "Irene Mbari-Kirika, Executive Director, inABLE",
+        "noticePeriod": "At least 1 week prior"
+      },
+      "features": {
+        "audio_descriptions": true,
+        "braille_materials": true,
+        "camera_optional": true,
+        "cart_captions": true,
+        "hearing_loop": true,
+        "mobility_parking": true,
+        "mobility_restrooms": true,
+        "mobility_stepfree": true,
+        "pre_agenda": true,
+        "quiet_room": true,
+        "screen_reader_docs": true,
+        "sli_support": true
+      },
+      "notes": {
+        "hearing": "2 certified KSL interpreters on main stage + ASL for global stream, human CART captions on all screens, transcripts in 2hrs",
+        "mobility": "KICC Tower Block lifts 36-inch wide, ramp slope 1:12, wheelchair seating front row, 12 accessible washrooms on 1st floor",
+        "sensory": "Low-stimulus quiet room Tsavo Breakout 3, flicker-free lighting, breaks every 45 mins, agenda shared 1 week early",
+        "vision": "Slides emailed 48hrs prior with ALT text, live audio description on Channel 2, braille programs on request by May 10"
+      }
+    },
+    "basic": {
+      "category": "event",
+      "organization": {
+        "logo": {
+          "contentType": "image/jpeg",
+          "downloadURL": "https://firebasestorage.googleapis.com/v0/b/accessablebyhex.firebasestorage.app/o/opportunity-logos%2F-P29YXonrz8Xpsqk8SMU%2F1790104710611-escribers-logo.jpg?alt=media&token=1efc7695-152c-4d16-bcfd-32da648e24da",
+          "name": "escribers-logo.jpg",
+          "size": 39758,
+          "storagePath": "opportunity-logos/-P29YXonrz8Xpsqk8SMU/1790104710611-escribers-logo.jpg"
+        },
+        "name": "inABLE",
+        "website": "https://inable.org"
+      },
+      "title": "Inclusive Africa 2027: AI Assistive Tech & Disability Employment Summit"
+    },
+    "details": {
+      "applicationUrl": "https://inable.org/inclusive-africa-2027/register/",
+      "descriptionMarkdown": "Join 800+ Innovators in Nairobi + 10,000 Online\ninABLE, Safaricom, Google Accessibility and the Mastercard Foundation present 3 days of live demos, hiring and policy.\n\n## Why Attend\n- Day 1: AI & Assistive Tech Expo - Try OrCam, Seeing AI, Ava captions, with GDI Hub designers\n- Day 2: Disability Employment Fair - Interviews with Safaricom, KCB Group, Andela, UNHCR Kenya\n- Day 3: Policy Lab with Kenya Society for the Blind and Light for the World on the Disability Bill 2025 rollout\n\n## Headline Speakers\n1. Irene Mbari-Kirika, inABLE\n2. Christopher Patnoe, Google Accessibility\n3. Anne Nderitu, Safaricom Diversity & Inclusion\n\n## Access Is The Main Stage\nEvery keynote has KSL, CART, audio description and Swahili / English / French stream. Come as you are - stimming, signing, rolling welcome.\n\nPersons with disabilities, parents of children with disabilities and neurodivergent innovators get priority seating and travel grants.",
+      "multimodalSupport": true,
+      "pledgeAccepted": true
+    },
+    "logistics": {
+      "applicationDeadline": "2027-05-10",
+      "compensation": "Free",
+      "deliveryMode": "hybrid",
+      "startDate": "2027-06-02",
+      "venueAddress": "Tsavo Ballroom, Kenyatta International Convention Centre, Harambee Ave, Nairobi. Step-free entry via Tower Block ramp, accessible parking at Basement P2, nearest matatu stage: Kencom"
+    },
+    "meta": {
+      "createdAt": 1790104714650,
+      "submittedAt": "2026-09-22T19:18:34.461Z"
+    },
+    "schemaVersion": 1,
+    "status": "pending_review"
+  },
+  "-P29_sRDBLhxTinfDkpb": {
+    "accessibility": {
+      "coordinator": {
+        "contact": "inclusion.kenya@sightsavers.org",
+        "name": "Edwin Bett",
+        "noticePeriod": "At least 1 week prior"
+      },
+      "features": {
+        "audio_descriptions": true,
+        "braille_materials": true,
+        "camera_optional": true,
+        "cart_captions": true,
+        "hearing_loop": false,
+        "mobility_parking": false,
+        "mobility_restrooms": true,
+        "mobility_stepfree": true,
+        "pre_agenda": false,
+        "quiet_room": true,
+        "screen_reader_docs": true,
+        "sli_support": true
+      },
+      "notes": {
+        "vision": "Application form tested with NVDA, JAWS and TalkBack, Word version with ALT text on request"
+      }
+    },
+    "basic": {
+      "category": "grant",
+      "organization": {
+        "logo": {
+          "contentType": "image/jpeg",
+          "downloadURL": "https://firebasestorage.googleapis.com/v0/b/accessablebyhex.firebasestorage.app/o/opportunity-logos%2F-P29_sRDBLhxTinfDkpb%2F1790105323438-images_9_.jpeg?alt=media&token=79dcb0f2-0fdf-42f5-8636-597c705cdc38",
+          "name": "images (9).jpeg",
+          "size": 2493,
+          "storagePath": "opportunity-logos/-P29_sRDBLhxTinfDkpb/1790105323438-images_9_.jpeg"
+        },
+        "name": "Sightsavers Kenya",
+        "website": "https://www.sightsavers.org"
+      },
+      "title": "Inclusive Futures Seed Grant: Ksh 500,000 for Entrepreneurs with Disabilities"
+    },
+    "details": {
+      "applicationUrl": "https://www.sightsavers.org/grants/inclusive-futures-kenya-2027/",
+      "descriptionMarkdown": "Ksh 25 Million Fund for Disability-Led Businesses in Kenya\nSightsavers Kenya, with KCB Foundation and iHub Nairobi, will fund 50 disability-led micro-businesses in Nairobi, Kisumu, Mombasa and Turkana.\n\n## What Winners Get\n- Ksh 250,000 - 500,000 M-Pesa disbursement in two tranches\n- 6-month mentorship from KCB Lions' Den alumni\n- Free KRA registration, KEBS product testing and M-Pesa Daraja API onboarding for tech ventures\n- Sign-language business coaching for deaf founders\n\n## Who Can Apply\n1. Kenyan aged 18+ with disability, self-help group or OPD-owned cooperative\n2. Business 0-3 years old: tailoring, agribusiness, assistive-tech repair, e-commerce, Mama Mboga scale-ups all welcome\n3. No KCSE degree required, no collateral required\n\n## Timeline\nApplications close Feb 28, 2027. Pitches in March over video or voice note. Disbursement from April 1, 2027.\n\nDeafBlind applicants can apply via video, WhatsApp voice note to +254 700 111 222, or with a support person. Blind applicants can request a phone interview instead of the written form.",
+      "multimodalSupport": true,
+      "pledgeAccepted": true
+    },
+    "logistics": {
+      "applicationDeadline": "2027-02-28",
+      "compensation": "Ksh 500,000 grant",
+      "deliveryMode": "remote",
+      "startDate": "2027-04-01"
+    },
+    "meta": {
+      "createdAt": 1790105326603,
+      "submittedAt": "2026-09-22T19:28:46.449Z"
+    },
+    "schemaVersion": 1,
+    "status": "pending_review"
+  },
+  "-P2CuxiYkJIRkEliQobr": {
+    "accessibility": {
+      "coordinator": {
+        "contact": "accommodations@kenyainclusivetech.org",
+        "name": "Grace Mwende, Inclusion Officer",
+        "noticePeriod": "At least 1 week prior"
+      },
+      "features": {
+        "audio_descriptions": true,
+        "braille_materials": false,
+        "camera_optional": true,
+        "cart_captions": true,
+        "hearing_loop": true,
+        "mobility_parking": true,
+        "mobility_restrooms": true,
+        "mobility_stepfree": true,
+        "pre_agenda": true,
+        "quiet_room": true,
+        "screen_reader_docs": true,
+        "sli_support": true
+      },
+      "notes": {
+        "mobility": "Ramp slope 1:12, entrance doors 36-inch with auto-push, height-adjustable desks, accessible restrooms on same floor.",
+        "sensory": "Flicker-free lighting, sensory breaks every 45 mins, quiet room next to lab, no strobe effects."
+      }
+    },
+    "basic": {
+      "category": "training",
+      "organization": {
+        "logo": {
+          "contentType": "image/jpeg",
+          "downloadURL": "https://firebasestorage.googleapis.com/v0/b/accessablebyhex.firebasestorage.app/o/opportunity-logos%2F-P2CuxiYkJIRkEliQobr%2F1790161182440-images_copy_.jpeg?alt=media&token=4a54a698-0a43-44d2-953a-cf520911e949",
+          "name": "images (copy).jpeg",
+          "size": 11660,
+          "storagePath": "opportunity-logos/-P2CuxiYkJIRkEliQobr/1790161182440-images_copy_.jpeg"
+        },
+        "name": "Kenya Inclusive Tech Trust",
+        "website": "https://kenyainclusivetech.org"
+      },
+      "title": "Accessible Frontend & Digital Skills Fellowship 2027 — Cohort 3"
+    },
+    "details": {
+      "applicationUrl": "https://kenyainclusivetech.org/apply/a11y-fellowship-2027",
+      "descriptionMarkdown": "## About this 12-week Fellowship\n\nFree, hybrid vocational training for 40 youth with disabilities and neurodivergent learners. Learn HTML, CSS, JavaScript, and WCAG accessibility auditing. No prior coding experience required.\n\n## What you will learn\n\n- Build responsive websites with semantic HTML\n- Test with screen readers (NVDA, VoiceOver)\n- Accessibility audits and inclusive design portfolio\n- Career coaching, mentorship, and paid internship linkages\n\n## Schedule & Format\n\n- **Duration:** 19 Jan - 9 Apr 2027, Tue/Thu in-person labs + Sat remote\n- **Venue:** Westlands, Nairobi + Zoom with CART + KSL\n- **Time commitment:** 8 hrs/week, camera-optional, flexible deadlines\n\n## Who should apply\n\nPersons with disabilities and neurodivergent individuals are strongly encouraged to apply. Women, refugees, and rural learners welcome. Support available in English, Kiswahili, and KSL.\n\n## Costs & Support\n\n100% free. Transport/data stipend, laptop loan, personal assistant allowance on request.",
+      "multimodalSupport": true,
+      "pledgeAccepted": true
+    },
+    "logistics": {
+      "applicationDeadline": "2026-11-28",
+      "compensation": "Free Admission",
+      "deliveryMode": "hybrid",
+      "startDate": "2027-01-19",
+      "venueAddress": "4th Floor, All-Access Innovation Center, Woodvale Grove, Westlands, Nairobi. Step-free North Entrance ra4th Floor, All-Access Innovation Center, Woodvale Grove, Westlands, Nairobi. Step-free North Entrance ramp 1:12 with auto-push 36-inch doors, 2 wide elevators, 5 mins from Westlands matatu stage.mp 1:12 with auto-push 36-inch doors, 2 wide elevators, 5 mins from Westlands matatu stage."
+    },
+    "meta": {
+      "createdAt": 1790161188230,
+      "submittedAt": "2026-09-23T10:59:47.569Z"
+    },
+    "schemaVersion": 1,
+    "status": "pending_review"
+  },
+  "-P2D9fw1kCzF4KeyE3S1": {
+    "accessibility": {
+      "coordinator": {
+        "contact": "support@uwezoability.org",
+        "name": "Daniel Otieno",
+        "noticePeriod": "At least 1 week prior"
+      },
+      "features": {
+        "audio_descriptions": true,
+        "braille_materials": true,
+        "camera_optional": false,
+        "cart_captions": true,
+        "hearing_loop": true,
+        "mobility_parking": false,
+        "mobility_restrooms": true,
+        "mobility_stepfree": true,
+        "pre_agenda": true,
+        "quiet_room": false,
+        "screen_reader_docs": true,
+        "sli_support": true
+      }
+    },
+    "basic": {
+      "category": "aid",
+      "organization": {
+        "logo": {
+          "contentType": "image/jpeg",
+          "downloadURL": "https://firebasestorage.googleapis.com/v0/b/accessablebyhex.firebasestorage.app/o/opportunity-logos%2F-P2D9fw1kCzF4KeyE3S1%2F1790165303266-images_12_.jpeg?alt=media&token=787f15eb-4b69-4ca7-a70f-7f6d09974691",
+          "name": "images (12).jpeg",
+          "size": 22207,
+          "storagePath": "opportunity-logos/-P2D9fw1kCzF4KeyE3S1/1790165303266-images_12_.jpeg"
+        },
+        "name": "Uwezo Ability Community Foundation",
+        "website": "https://uwezoability.org"
+      },
+      "title": "Free Assistive Devices & Community Support Clinic 2027 - Nairobi"
+    },
+    "details": {
+      "applicationUrl": "https://uwezoability.org/apply/aid-clinic-2027",
+      "descriptionMarkdown": "## Free Devices for 500 Beneficiaries\n\nDistribution of wheelchairs, white canes, hearing aids, and pressure cushions plus free fitting, repairs, and training. Persons with disabilities strongly encouraged to apply.\n\n## What you receive\n\n- Free assistive device + fitting by certified therapists\n- Repair kit and 1-year free maintenance\n- M-PESA transport refund up to Ksh 2,000 on collection day\n- Referral to county affirmative-action fund if eligible\n\n## Who qualifies\n\n- Kenyan with disability, all ages, priority to youth, women, and rural applicants\n- No fees, no education requirement, caretakers may apply on behalf\n\n## How distribution works\n\n1. Apply online or via WhatsApp by 15 Dec 2026\n2. SMS invitation with fitting slot for 20 Jan 2027 onwards\n3. In-person assessment and same-day device issue at Kasarani",
+      "multimodalSupport": true,
+      "pledgeAccepted": true
+    },
+    "logistics": {
+      "applicationDeadline": "2026-12-15",
+      "compensation": "100% Free",
+      "deliveryMode": "onsite",
+      "startDate": "2027-01-20",
+      "venueAddress": "Kasarani Social Hall, Thika Road, Nairobi. Step-free main gate ramp 1:12, wide elevators, reserved parking bay 3, 2 mins from Kasarani matatu stage."
+    },
+    "meta": {
+      "createdAt": 1790165306700,
+      "submittedAt": "2026-09-23T12:08:26.259Z"
+    },
+    "schemaVersion": 1,
+    "status": "pending_review"
+  }
+}

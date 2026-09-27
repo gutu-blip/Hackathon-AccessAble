@@ -1,0 +1,508 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#2e4f00", "on-secondary-fixed": "#102000", "surface-container": "#edeeef", "error-container": "#ffdad6", "on-primary-container": "#cad3ff", "on-primary-fixed": "#001551", "on-primary-fixed-variant": "#0039b5", "surface-container-high": "#e7e8e9", "tertiary-container": "#515c70", "on-error-container": "#93000a", "surface-bright": "#f8f9fa", "surface-tint": "#2151da", "secondary": "#3f6900", "outline-variant": "#c4c5d7", "inverse-on-surface": "#f0f1f2", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#b7c4ff", "outline": "#747686", "on-background": "#191c1d", "surface": "#f8f9fa", "on-tertiary-fixed": "#111c2d", "primary-container": "#1d4ed8", "tertiary-fixed": "#d8e3fb", "on-secondary-container": "#437000", "on-primary": "#ffffff", "inverse-primary": "#b7c4ff", "primary": "#0037b0", "on-tertiary-fixed-variant": "#3c475a", "primary-fixed": "#dce1ff", "secondary-container": "#aff75a", "secondary-fixed": "#aff75a", "surface-variant": "#e1e3e4", "on-tertiary": "#ffffff", "tertiary": "#3a4558", "surface-container-highest": "#e1e3e4", "surface-dim": "#d9dadb", "background": "#f8f9fa", "on-surface-variant": "#434655", "surface-container-low": "#f3f4f5", "on-tertiary-container": "#c9d5ed", "on-error": "#ffffff", "tertiary-fixed-dim": "#bcc7de", "on-surface": "#191c1d", "on-secondary": "#ffffff", "error": "#ba1a1a", "inverse-surface": "#2e3132", "secondary-fixed-dim": "#95da40" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin": "2.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-xl": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-hero": ["60px", { "lineHeight": "68px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-mobile lg:px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm focus:outline-none focus:ring-4 focus:ring-primary-container rounded-full" data-path="browse-opportunities" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCDjVcBc3SNANVDT_ft-chQPXJCLOQGldM-AKBAD84S97xfkIkmjOznYOtxgWiW5Dbv2hTdSkGJo8eDJF1uCwzv-W-Ghj0kM_grRYiD-0zFLledBnQ9udNAAE2K36tqe-gOPhRfYoS38KIQ3At2QtkO6UFAKvlJja-KOoArAyMH27rewac-QfhWctu8fNbtWxq40lHIyPqF-yjA0mQbO0CWxR1-sKK_GV4uKF8obS2ONVis9Nykdf-Oqp7fqxZegFIOvE" alt="AccessAble Logo" class="h-10 w-auto object-contain"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">AccessAble</span><span class="font-label-sm text-label-sm text-secondary font-bold -mt-1">Career Discovery</span></div></a></div><div class="hidden md:flex flex-1 max-w-xl mx-space-sm"><div class="w-full flex items-center bg-surface-container-low px-space-md py-space-xs rounded-full shadow-[0_2px_12px_rgba(0,0,0,0.04)] focus-within:ring-2 focus-within:ring-primary-container"><span class="material-symbols-outlined text-outline mr-space-sm">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Search inclusive jobs, internships, accommodations..." type="text"></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full" data-active-classes="bg-primary text-on-primary font-label-md rounded-full shadow-sm"><a aria-current="page" class="px-space-md py-2 transition-all bg-primary text-on-primary font-label-md rounded-full shadow-sm" data-path="browse-opportunities" href="#">Browse Opportunities</a><a class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="saved-bookmarks" href="#">Saved Bookmarks</a><a class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="accessibility-guide" href="#">Accessibility Guide</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full text-on-surface-variant"><button class="p-1.5 rounded-full hover:bg-surface-container hover:text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" title="Toggle High Contrast"><span class="material-symbols-outlined text-[20px]">contrast</span></button><button class="p-1.5 rounded-full hover:bg-surface-container hover:text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" title="Text Size Options"><span class="material-symbols-outlined text-[20px]">text_fields</span></button><button class="p-1.5 rounded-full hover:bg-surface-container hover:text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" title="Universal Accessibility Options"><span class="material-symbols-outlined text-[20px]">accessibility</span></button></div><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary px-space-lg py-2.5 rounded-full font-label-md text-label-md shadow-sm hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-secondary-container transition-transform" data-path="post-an-opportunity" href="#">Post an Opportunity</a><div class="flex items-center ml-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1VNhLS90sGEsrGZ4QTntCwO2KXWJl3z598WV0kITWYBuSL7zQYm0n6q799qV9ZDVq6a-2qzH9MhYEWr_pGzq8mxMSVe8JefZOglP-0LPl0necCYsTlYSKP2el0-E5dq678kpSUDcrwBI35nO_VHGJQGtDpw75E6j9cjj0fR_y639Vb6qP_D7otM3hrleIb-3mYbOsBLr9zQN7FbbalfsIMCUizv6yUVCbmcc2MhiOggcFFPJbt-6BjxI16mCYl3kgtWB50d1OBlsew"></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-lowest shadow-[1px_0_12px_rgba(0,0,0,0.03)] z-40 overflow-y-auto p-space-md flex flex-col gap-space-lg"><div class="flex items-center justify-between pb-space-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">tune</span><span class="font-label-lg text-label-lg font-bold text-on-surface">Faceted Filters</span></div><button class="font-label-sm text-label-sm text-primary hover:underline">Reset</button></div><div class="space-y-space-sm"><span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Opportunity Type</span><div class="space-y-1.5"><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Full-Time Jobs</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Internships &amp; Co-ops</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Apprenticeships</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Fellowships</label></div></div><div class="space-y-space-sm"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Accommodations</span></div><div class="space-y-1.5"><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Screen Reader Compatible</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Wheelchair / Step-Free</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">ASL / CART Interpreting</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Flexible Hours / Rest Breaks</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Neurodivergent Friendly</label></div></div><div class="space-y-space-sm"><span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Work Mode</span><div class="space-y-1.5"><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Remote Only</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">Hybrid</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox">On-site Verified</label></div></div><div class="space-y-space-sm"><span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Deadlines &amp; Urgency</span><div class="space-y-1.5"><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 text-primary focus:ring-primary-container" name="deadline" type="radio">Closing Soon (&lt; 7 days)</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input class="w-4 h-4 text-primary focus:ring-primary-container" name="deadline" type="radio">This Month</label><label class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface cursor-pointer text-body-sm font-body-sm"><input checked="" class="w-4 h-4 text-primary focus:ring-primary-container" name="deadline" type="radio">All Rolling Deadlines</label></div></div></aside><div class="pl-72"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-14rem)]"><div class="flex flex-col w-full">
+<div class="w-full px-gutter-mobile lg:px-gutter py-space-md max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Hero / Discovery Editorial Cluster Section -->
+<section class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-sm">
+<div class="absolute -right-20 -top-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-16 w-80 h-80 rounded-full bg-primary-fixed/25 blur-2xl pointer-events-none"></div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Text & Headline Area -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 self-start bg-secondary-container/30 px-space-md py-1.5 rounded-full">
+<img alt="AccessAble Verified Icon" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3AW1b2aGnNI0cfYPrGyvIJ1Zekk1YCjAWIll6LzziPDWs_dw2QRhxLVapfHPgPeZkSiZVPg7Z_NXmUcgVPHtPPAjdI6RZQJ0TAZOfdRPUTS3-sGVX9RgkI8QvjZ54vsbGIfoxOo4R2x7IVx2vRENMlXj3LkdJ70mWUDgq_SuHd88lXThalCnwVfQbo7vuSnsT9vPSaBjRFeQVJfUSrnm7Zd-nRFOvbVgKDqNODGuMl4gMHnahIwrxwolLaENOxMNcV0o">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider font-bold">100% Accommodation Guaranteed</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-extrabold">
+            Discover Accessible &amp; Inclusive Opportunities
+          </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-xl">
+            Find careers, internships, and fellowships built with accommodations from day one. Designed for dignity, full participation, and career progression.
+          </p>
+<!-- Verified Key Stats Pills -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2.5 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">1,420+ Verified Roles</span>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">380 Inclusive Employers</span>
+</div>
+<div class="flex items-center gap-2.5 bg-secondary-container px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-fixed">verified</span>
+<span class="font-label-md text-label-md font-bold text-on-secondary-fixed">WCAG &amp; ADA Verified</span>
+</div>
+</div>
+</div>
+<!-- Visual Pinterest-Style Editorial Organic Cluster -->
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<div class="relative w-full max-w-sm h-72 sm:h-80 flex items-center justify-center">
+<!-- Organic Visual 1: Main dynamic card -->
+<div class="absolute w-44 h-56 rounded-3xl overflow-hidden shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300 z-20 left-4 top-2 bg-primary">
+<img class="w-full h-full object-cover" data-alt="A smiling disabled professional woman in a modern bright creative studio working with assistive screen reading monitors and ergonomic workspace tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKoz9IVr6ByJX88ukbzr6tNn2BBU82sPXGtveRE0NhZDqh6Rrrz6nb4Wkpy-SVPaIIdov0Z1J9bvXCqPehAtTgVTREAuwfxmvO4bsfEyBb1XPYLsa6Qu1G4a0amdQ8Ks9CPiFoqU7JjvH-F057wRA4x2twm7Tt0EyJYGO4AJdNac7dziY68kSNXAIXfMspXyT8bEEEFN311qbxcVjm9XDMts4_3cS9RXYoJLutad6aNtuohlHywfwzjg">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-3">
+<span class="font-label-sm text-label-sm text-on-primary bg-primary-container px-2 py-0.5 rounded-full">Inclusive Tech</span>
+</div>
+</div>
+<!-- Organic Visual 2: Secondary overlapping card -->
+<div class="absolute w-40 h-52 rounded-3xl overflow-hidden shadow-md transform rotate-6 hover:rotate-0 transition-transform duration-300 z-10 right-2 top-8 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An agile creative designer communicating with colleagues using expressive American Sign Language in an airy, brightly illuminated inclusive workplace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDw7XwUBg2ZVu1BrOxRAchx3Qzu1OFSVc3k6J5PX4OCP4DcIuDVkK2MZQj9F3wh1fnGitTF2Ciqo6pnBOUW1vUgVvnm7lPrWm2Fh4A8nSh36Hlgn_4wiEn8wTn0Ign2vfgQp5jfAc49me1KmH60fBq0TTfrS2-jEjVn_PaaK4q4CSRhVsSwpFuajwMrID5bpZgAQrqMbBfelHucsJNz6KDVO6uxHJwgdZzFtmkJ3Fcx9qSNAV3rme5Hw">
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur rounded-full p-1.5 shadow">
+<img alt="AccessAble Emblem" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtXasFbINsZyg42aA7_TxHxLjvfFB5Nn-QLPrO3VGTMw014NuhsbxOmMcz6vow1jzQo0yCJbfyZMtPuO6_uSpEKnXuZZ6pLK3uLplHCKD4heNJRFzZ55Tc_LBXgMo3P1CCKiYJUcLpqConELHkrj-gDgZWNrdObkws7GRv1heSd_bDhTlTasMkAImN_1ENKwn9ajXpc1sSwfiOkEYQT9eeomNHC3KLlljR_ZAWM2Xo8n3Lmdxvmo1K9coPoVT-Y1IwCOg">
+</div>
+</div>
+<!-- Organic Visual 3: Floating bottom pill badge -->
+<div class="absolute bottom-2 z-30 bg-surface-container-lowest px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center">
+<img alt="Verified" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUH2fqYRA124R5mS3R4s_zG91oYV8Jqe38jseAYz8_7tjL6rpgJ094QkrUnCuzb4Ais6_HWxLzuCqVO8dmgeli1DMlTl-isxqY6NTFg4ub9AAZ9g5FMDxfMoXtmq5cOfF9IsagIydlUdO7ptfDpCkujh6QGghmL0y2jCnJKF-KWKIEQeVPRzWn13nBvtaJJKU1LxNfmDpQqHiC2UIoRzIoY3S6dQGAuZVwu4Fucer3p7lAAuHifogZN0VedYksax93U88">
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Universal Standard</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Zero-Barrier Workplace</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Filter Scroll Pills -->
+<div class="mt-space-lg pt-space-md border-t-0 flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary shadow-sm whitespace-nowrap">
+          All Opportunities
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface bg-surface-container-low hover:bg-surface-container transition-colors whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+          Screen Reader Verified
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface bg-surface-container-low hover:bg-surface-container transition-colors whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">sign_language</span>
+          ASL Fluent / Provided
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface bg-surface-container-low hover:bg-surface-container transition-colors whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">accessible</span>
+          Wheelchair Accessible
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface bg-surface-container-low hover:bg-surface-container transition-colors whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">home_work</span>
+          100% Remote
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface bg-surface-container-low hover:bg-surface-container transition-colors whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">psychology</span>
+          Neurodiversity Friendly
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface bg-surface-container-low hover:bg-surface-container transition-colors whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">devices</span>
+          Assistive Tech Provided
+        </button>
+</div>
+</section>
+<!-- Controls Bar: Result Count & Sorting -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-container-lowest px-space-md py-3 rounded-full shadow-sm">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Showing 64 Opportunities</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-secondary font-bold flex items-center gap-1">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWGd-81drL7Nt56hJnMiN0lFRB9nqwpr6Ya4LW_1cengopaR8z084uG7Jl-5rArWAWs2Byu2yXjV05NjEHswOy5ZR26s6FODEC5ktiKGVeQjcLdHpcxSNOS4PE1YGvI0G7IeoNWZ2eQsWGKo7JC0g37wYlzCaKH34c0DW15Uxaoi-AEIJrcOf9Bl0j4ViMMsdFoifx1WwPjKi1Qa7BhpapgpYD1CmJHWwPd3tGjJjbeCmmwGN2KPxCa_hyOxOfWpBhpiU"> Active verified
+        </span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold" for="sort-select">Sort by:</label>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md rounded-full py-2 pl-4 pr-9 focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="sort-select">
+<option>Most Relevant</option>
+<option>Newest</option>
+<option>Highest Accommodation Match</option>
+<option>Salary (High to Low)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] absolute right-3 top-2.5 text-on-surface pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Opportunity Cards Grid (2 columns on wide, 1 on small) -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-md">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-space-md relative overflow-hidden group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-sm font-bold">
+                IT
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">InclusionTech Labs</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Senior UX Accessibility Specialist
+                </h2>
+</div>
+</div>
+<button aria-label="Bookmark Senior UX Accessibility Specialist" class="p-2.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface hover:text-on-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<!-- Role Metadata Badges -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Full-Time</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">100% Remote</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">$125k - $145k/yr</span>
+</div>
+<!-- Verified Accommodations -->
+<div class="pt-space-xs flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1.5">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRZqu5ilMT97zfPV82wMPqykrz0UiB4VZf7w3U3CFuaeVcw5PnwKs_4G3uJCfeT8y2xHsciE8DG7PcRACaKs741hTnfyGOOMpGHBC6utn8u1hawxEI8sRSdNtRrVICqrXz6kmo2oCPTXZ2TZmBrna1h4xtFLXav4WIYxpYoFcnzOHEl5_DNu4h4D7CTTKWSESwLnDcZ_TybF8mKfsWHVzLIPkyQ7zzI5LPdV9Ydroq0suoUA3TWW12Z5Hbdy5nGSX2T2U">
+              Verified Accommodations Included
+            </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span> Screen Reader Verified
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Flexible Hours
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">chair</span> Ergonomic Equipment Stipend
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">volume_off</span> Quiet Work Environment
+              </span>
+</div>
+</div>
+</div>
+<!-- Footer / Action Area -->
+<div class="flex items-center justify-between pt-space-sm border-t-0 bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md px-space-lg rounded-b-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Posted 2 days ago</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-semibold text-primary">14 applicants</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-lg py-2.5 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary hover:bg-primary-container shadow-sm hover:scale-[1.02] transition-transform">
+              Apply Now
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-space-md relative overflow-hidden group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container flex items-center justify-center text-on-secondary-fixed font-headline-sm font-bold">
+                OP
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Open Pathways Foundation</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Inclusive Curriculum Designer
+                </h2>
+</div>
+</div>
+<button aria-label="Bookmark Inclusive Curriculum Designer" class="p-2.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface hover:text-on-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Full-Time</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Hybrid (Boston, MA)</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">$85k - $98k/yr</span>
+</div>
+<div class="pt-space-xs flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1.5">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC26zWJj18FSn7weEFm23AsEfmDhgqWD_6YTTZEnfWJbCnuExUv_a9GhgIMzFfqz0rQr7oq3ul-l_JxGW4WHsiTz5e0SPsK7npYqVbMgsRQqylX1T_LMrts9UjmKJqzbMdUesn_7sOSf4sLd-jbG9lv2bPiVRkSLvHNaJl5TO14ze69aZJiuptJ6nyPvlBgiYLHm83DNMJIOVJQRrkb2qNHumQunR5ZujcZpg6Q2z8U3ReZio4VELFp8VDsSCmU40aD_3k">
+              Verified Accommodations Included
+            </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">sign_language</span> ASL Interpreters on Demand
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">subtitles</span> Closed Captioning Standard
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">accessible</span> Step-free Wheelchair Campus
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md px-space-lg rounded-b-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-bold">Just now</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-semibold text-primary">6 applicants</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-lg py-2.5 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary hover:bg-primary-container shadow-sm hover:scale-[1.02] transition-transform">
+              Apply Now
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-space-md relative overflow-hidden group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline-sm font-bold">
+                EG
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">EquiGlobal Software</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Accessibility QA Analyst &amp; Tester
+                </h2>
+</div>
+</div>
+<button aria-label="Bookmark Accessibility QA Analyst" class="p-2.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface hover:text-on-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Contract</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Remote</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">$55/hr</span>
+</div>
+<div class="pt-space-xs flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1.5">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-R_dFc-LDR1PgKmUaYzuxcc-K5JHdvoaFg0I8_gNlwa7WAVMiE3GzWf_UtEdi7j8ndcOZ4-aQ3_xg6ktPtEeR6HJdIB8V2DZ_1Jc8xbSGU-5F5K4fSclLWEKjfAsfQhLhgm5536ODl2zXo4EsW4lckIaXcyDbIMFU8apWchfXQ0hoPTXmCWtnZP7WV5U-KjCN_BB7V5ogGDGZggVm4bNgZgV-XdxjsHqso5h3HYcOyN1IzSOfcnPjnmEXTOpeO2-V3Lw">
+              Verified Accommodations Included
+            </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">zoom_in</span> Screen Magnifier &amp; NVDA/JAWS Tested
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">psychology</span> Neurodivergent Mentorship
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">forum</span> Asynchronous Comms
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md px-space-lg rounded-b-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Posted 3 days ago</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-semibold text-primary">22 applicants</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-lg py-2.5 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary hover:bg-primary-container shadow-sm hover:scale-[1.02] transition-transform">
+              Apply Now
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-space-md relative overflow-hidden group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container/70 text-on-secondary-fixed font-headline-sm font-bold flex items-center justify-center">
+                HM
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Horizon Media Network</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Digital Content Specialist (ASL Video)
+                </h2>
+</div>
+</div>
+<button aria-label="Bookmark Digital Content Specialist" class="p-2.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface hover:text-on-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Full-Time</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">New York, NY (Hybrid)</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">$78k - $90k/yr</span>
+</div>
+<div class="pt-space-xs flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1.5">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs_pI5o9v0gXq1gT0BfgadyfxUQDJ4HI_s8udYQfSQ789j9-ezxoT62ckHOHyDwqxPRomnGNn1fDhynCuNwVM8hxe9LCDMVgUgBezgEyFNocH7vj_tN0v4AaJvXyCGacHbir77TzopSOSjGpJ6vZ_JeE0KD48mZAouj9CpPYwFwFeLAsC6tUfM75_TTqxCcut8LQwzAm0YAfEbnZ_Zq6JFPTPTg7LRUUG3XjxZYJxdTgQxmrI3mSfeTMu0pGToNqRH2Us">
+              Verified Accommodations Included
+            </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hearing_disabled</span> Deaf/Hard-of-Hearing Culture First
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Video Relay Service Integrated
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">closed_caption</span> Live Transcriptions
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md px-space-lg rounded-b-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Posted 4 days ago</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-semibold text-primary">11 applicants</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-lg py-2.5 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary hover:bg-primary-container shadow-sm hover:scale-[1.02] transition-transform">
+              Apply Now
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-space-md relative overflow-hidden group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed/60 text-primary font-headline-sm font-bold flex items-center justify-center">
+                CB
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">CareBridge Health</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Customer Success Representative
+                </h2>
+</div>
+</div>
+<button aria-label="Bookmark Customer Success Representative" class="p-2.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface hover:text-on-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Full-Time</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Remote (US)</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">$60k - $72k/yr</span>
+</div>
+<div class="pt-space-xs flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1.5">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuPeHS3Gdp5F2rGFwxbNQdx1yKCNzaksOlxBeduMKBmiolk1qbTZTxzavUHPUhhBLsBQFhJklbV4j16RhdV-SxqMZteBULWf0Kq8XxRg4IlbXjSMmjJ7j_2HIL-MtZ2RP96ZYrFf8hveSAkKcmNy09_4N4tKgwEVPZA1kiYG949Wg0LeUfK1346COCPS_BHskjwD6QK5H-g4hElDIsDf6EI2KtosrC0fsrZIIj5_rke5Pokq8weJ6ZWSlVVLZzf41pSi0">
+              Verified Accommodations Included
+            </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">record_voice_over</span> Speech-to-Text Support
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">coffee</span> Flexible Breaks
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">nature</span> Sensory Friendly Setup
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md px-space-lg rounded-b-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Posted 5 days ago</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-semibold text-primary">30 applicants</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-lg py-2.5 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary hover:bg-primary-container shadow-sm hover:scale-[1.02] transition-transform">
+              Apply Now
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-space-md relative overflow-hidden group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-secondary text-on-secondary font-headline-sm font-bold flex items-center justify-center">
+                AD
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Aura Design Systems</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Front-End Accessibility Engineer (W3C/WCAG)
+                </h2>
+</div>
+</div>
+<button aria-label="Bookmark Front-End Accessibility Engineer" class="p-2.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface hover:text-on-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Full-Time</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">Remote</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">$130k - $155k/yr</span>
+</div>
+<div class="pt-space-xs flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1.5">
+<img alt="Verified" class="w-4 h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIbLeG2CeQGo4RiuYwfjyFToIlbg_-lIegIFezrEd29g9ULYsEnW785gRiDqzyx1HumqUNurx60tn6pMKcTe95OHVexj4s4Z6-Mw_Ym-llRgndiadj1gc30-MzHtEii73UzaG6Hce_q3f5oiQ6s6oIPnb1Fy5wdO1apI0mi6h8w25mTafthW8S2q7vaGK41zVlurCk58aymiSn_rdadTo-6qVBShU13X3WWg2dGmwlOmg5Biko0tLDDtvzKHpU-YXLn_s">
+              Verified Accommodations Included
+            </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">desktop_windows</span> Ergonomic Hardware Grant
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">contrast</span> Visual Contrast Tooling
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">groups</span> Autistic Community Resource Group
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md px-space-lg rounded-b-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Posted 1 week ago</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-semibold text-primary">19 applicants</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-lg py-2.5 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary hover:bg-primary-container shadow-sm hover:scale-[1.02] transition-transform">
+              Apply Now
+            </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Editorial Callout Banner / Brand Trust Section -->
+<div class="bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-3xl p-space-lg lg:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-md relative overflow-hidden">
+<div class="flex items-center gap-space-md relative z-10">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center shrink-0 shadow-inner">
+<img alt="Emblem" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQb-xcuDA3YApszMuYNFa_IjjvW3YqNy5R6eSF3rOEsPYLT2ydHsqNe4nvq9HakcuT0JzBbw2htghfu2hdMRIRvVHqoiFbXofwdc8eClbgnVfFbsxdqkgaNWJC8qT-a53VQUdfiMxVFmTLSXXTracbyeKfn_aPMzu6Em6IUyr67gMtEHklTEJZiA6QVe1Ed5pEw6y-7w3zg_c_nqI2n65ntMAPQEbKN66uN9-O6uva1j4nVzKeqlk8-OO_ctytCF2BmD4">
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm font-bold">Need a bespoke workplace accommodation interview?</span>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-xl">
+            AccessAble partners with employers to audit screen readers, physical facilities, and cognitive sensory accommodations prior to your first interview.
+          </p>
+</div>
+</div>
+<div class="relative z-10 shrink-0">
+<button class="bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg font-bold px-space-lg py-3 rounded-full hover:scale-105 transition-transform shadow-sm">
+          Request Accommodation Audit
+        </button>
+</div>
+</div>
+<!-- Pagination Controls -->
+<nav aria-label="Pagination Navigation" class="flex items-center justify-center gap-2 pt-space-md pb-space-lg">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+        Previous
+      </button>
+<div class="flex items-center gap-1.5">
+<button class="w-10 h-10 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary flex items-center justify-center shadow-sm">
+          1
+        </button>
+<button class="w-10 h-10 rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container-low flex items-center justify-center transition-colors">
+          2
+        </button>
+<button class="w-10 h-10 rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container-low flex items-center justify-center transition-colors">
+          3
+        </button>
+<span class="px-2 text-outline">...</span>
+<button class="w-10 h-10 rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container-low flex items-center justify-center transition-colors">
+          12
+        </button>
+</div>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1">
+        Next
+        <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</nav>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(0,0,0,0.03)]"><div class="w-full px-gutter-mobile lg:px-gutter py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCWku6ZpPWVXtQt8w0ZpnuVTJ3ERcAUjTsNDCMtXeJoM_KVv2GV-jdxKNW3Q0317oU-QiSsAU5-Hvi-GGS5CG1JQLYor_cZn6TEIabQ179mcPhmD5sa009E6aLgQAVrv9cvBgq9J8RydE-yT9pxn-6N7VY8dDB0qMwlNFiIFinqKFSvCcD6TydKg0JseRyear8GpWElbW9zrbhZsNctm-Dnu5DQjENKBiUSkd19yl1VkxbAuStiBLZnmm06z7zjRsjy60" alt="AccessAble Logo" class="h-6 w-auto object-contain"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 AccessAble. Universal accessibility verified.</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="accessibility-guide" href="#">Employer Guide</a><a class="hover:text-primary transition-colors" data-path="accessibility-guide" href="#">Universal Statement</a><a class="hover:text-primary transition-colors" data-path="browse-opportunities" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="browse-opportunities" href="#">Terms</a></div></div></footer></div>
+
+</body></html>

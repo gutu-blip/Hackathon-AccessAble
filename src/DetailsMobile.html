@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>AccessAble — Opportunity Details</title>
+<!-- Google Fonts: Plus Jakarta Sans & Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script data-purpose="tailwind-configuration">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            accent: {
+              lime: '#84cc16',
+              limeDark: '#4d7c0f',
+              limeLight: '#f7fee7'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 8px 24px -4px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04)',
+            'float-blue': '0 12px 28px -4px rgba(29, 78, 216, 0.35)',
+            'nav': '0 10px 30px -5px rgba(0, 0, 0, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.06)',
+            'pill': '0 2px 8px rgba(0, 0, 0, 0.04)'
+          }
+        }
+      }
+    };
+  </script>
+<style data-purpose="mobile-layout-styles">
+    html {
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
+    body {
+      overscroll-behavior-y: none;
+      -webkit-font-smoothing: antialiased;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#f0f4f9] text-slate-800 font-sans antialiased min-h-screen flex justify-center selection:bg-blue-100 selection:text-blue-900">
+<!-- Mobile Viewport Container (~390px iPhone standard frame) -->
+<div class="w-full max-w-[420px] bg-[#f8fafc] min-h-screen flex flex-col relative shadow-2xl border-x border-slate-200/60">
+<!-- BEGIN: AppHeader -->
+<!-- Mobile adaptation of Details.js floating header: brand + back, search, a11y suite, post, profile, category pills -->
+<header class="sticky top-0 z-50 px-4 pt-3 pb-2 backdrop-blur-md bg-[#f8fafc]/90">
+<div class="bg-white/95 rounded-3xl px-4 py-3 shadow-card border border-slate-200/70 flex flex-col gap-3">
+<!-- Brand row: back + logo + profile (matches Details.js header brand + profile pill) -->
+<div class="flex items-center justify-between gap-2">
+<button type="button" aria-label="Back to opportunities" class="w-9 h-9 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center active:scale-95 shrink-0">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<a aria-label="AccessAble Home" class="flex items-center gap-2 flex-1 min-w-0" href="#">
+<img alt="AccessAble Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCDjVcBc3SNANVDT_ft-chQPXJCLOQGldM-AKBAD84S97xfkIkmjOznYOtxgWiW5Dbv2hTdSkGJo8eDJF1uCwzv-W-Ghj0kM_grRYiD-0zFLledBnQ9udNAAE2K36tqe-gOPhRfYoS38KIQ3At2QtkO6UFAKvlJja-KOoArAyMH27rewac-QfhWctu8fNbtWxq40lHIyPqF-yjA0mQbO0CWxR1-sKK_GV4uKF8obS2ONVis9Nykdf-Oqp7fqxZegFIOvE"/>
+<span class="font-extrabold text-sm text-slate-900 tracking-tight truncate">AccessAble</span>
+</a>
+<div class="relative shrink-0">
+<img alt="User Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-lime-400 p-0.5 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0E56Ep7QQ2RWEOr7wwZZFbbCebGpKXC7Ch0UasYNbRkQYe3LuQFvyB2FFrLinDcsrvpS-zRTTguJ44PBRsX3BAZNWMqHdNx6Ke9sTQmZzkxVVS7MGU5VoDmjSJIEY8_-wp9GpnAJKPYN_xji0CJ5S_Ed5iCnIckMYrUzWvkVXW6AWAdeH1hhiMx-VEi21Ygb1j-yrDJ55taKxFTTLDdoHtw01DCC7xA31A-jeFAH8d4WAtcF9boi41e7SnW7pNvxKJ2I"/>
+<span class="absolute -bottom-0.5 -right-0.5 bg-lime-500 w-3 h-3 rounded-full border-2 border-white"></span>
+</div>
+</div>
+<!-- Search related opportunities (matches Details.js search, no voice/filter pills) -->
+<div class="relative flex items-center bg-slate-100/80 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-600 rounded-full border border-slate-200 px-4 py-2">
+<span class="material-symbols-outlined text-slate-400 text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent border-none outline-none text-xs text-slate-800 placeholder:text-slate-400 p-0 focus:ring-0" placeholder="Search related opportunities..." type="text" aria-label="Search related opportunities"/>
+</div>
+<!-- Accessibility suite + Post Opportunity (matches Details.js action nav) -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center bg-slate-100/90 rounded-full p-1 gap-1">
+<button class="p-1.5 rounded-full hover:bg-white text-slate-600" title="High Contrast Mode" type="button">
+<span class="material-symbols-outlined text-[18px]">contrast</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-white text-slate-600" title="Adjust Text Scaling" type="button">
+<span class="material-symbols-outlined text-[18px]">text_fields</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-white text-slate-600" title="Universal Accessibility Guide" type="button">
+<span class="material-symbols-outlined text-[18px]">accessibility_new</span>
+</button>
+</div>
+<a class="inline-flex items-center gap-1.5 bg-[#1d4ed8] text-white font-semibold text-xs px-4 py-2 rounded-full shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+          Post Opportunity
+        </a>
+</div>
+</div>
+<!-- Category pills: filter the related feed — matches Details.js CATEGORY_PILLS -->
+<div class="pt-2 flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+<button class="px-4 py-2 rounded-full font-semibold text-xs bg-[#1d4ed8] text-white shadow-sm shrink-0 flex items-center gap-1" type="button" aria-pressed="true">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+        See All
+      </button>
+<button class="px-4 py-2 rounded-full font-medium text-xs bg-white text-slate-700 border border-slate-200/80 shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">work</span>
+        Job
+      </button>
+<button class="px-4 py-2 rounded-full font-medium text-xs bg-white text-slate-700 border border-slate-200/80 shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">event</span>
+        Event
+      </button>
+<button class="px-4 py-2 rounded-full font-medium text-xs bg-white text-slate-700 border border-slate-200/80 shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+        Funding
+      </button>
+<button class="px-4 py-2 rounded-full font-medium text-xs bg-white text-slate-700 border border-slate-200/80 shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">school</span>
+        Training
+      </button>
+<button class="px-4 py-2 rounded-full font-medium text-xs bg-white text-slate-700 border border-slate-200/80 shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">campaign</span>
+        Beneficiary Program
+      </button>
+</div>
+</header>
+<!-- END: AppHeader -->
+<main class="flex-1 px-4 py-4 flex flex-col gap-6">
+<!-- BEGIN: OpportunityDetailCard -->
+<!-- Mobile adaptation of Details.js right REGION: adaptive opportunity details card -->
+<aside id="opportunity-detail-card" class="bg-white border border-slate-200/90 rounded-3xl shadow-card p-5 flex flex-col gap-4">
+<!-- Top Back / Org / Bookmark Bar (matches Details.js detail top bar) -->
+<div class="flex items-center justify-between">
+<button class="w-9 h-9 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center" title="Back to opportunities" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-1.5 font-bold text-sm text-slate-800 min-w-0">
+<span class="truncate">InclusionTech Labs</span>
+<span class="material-symbols-outlined text-blue-600 text-[18px] shrink-0">verified</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center" title="Bookmark" type="button" aria-pressed="false">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<!-- Hero Company Avatar & Role Summary (matches Details.js hero) -->
+<div class="flex flex-col items-center text-center pt-1">
+<div class="w-16 h-16 rounded-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white flex items-center justify-center text-xl font-extrabold shadow-md ring-4 ring-blue-50">
+            IT
+          </div>
+<span class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 bg-blue-50 border border-blue-200/80 px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">work</span>
+            Job
+          </span>
+<h2 class="text-lg font-bold text-slate-900 mt-2 tracking-tight leading-snug">Senior UX Accessibility Specialist</h2>
+<p class="text-xs font-bold text-blue-700 mt-0.5">$125,000 - $145,000 / yr</p>
+<!-- Role Chips: category + delivery + accommodation count (matches Details.js) -->
+<div class="flex flex-wrap justify-center items-center gap-1.5 mt-3">
+<span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-700">Job</span>
+<span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-700">100% Remote</span>
+<span class="px-3 py-1 rounded-full text-[11px] font-bold bg-lime-100 text-lime-800">3 Accommodations</span>
+</div>
+</div>
+<!-- Segmented Tab Switcher (Overview | Company | Barrier-Free) — matches Details.js -->
+<div class="grid grid-cols-3 bg-slate-100 p-1.5 rounded-2xl gap-1">
+<button class="py-2 rounded-xl text-xs font-bold text-slate-900 bg-white shadow-xs flex items-center justify-center gap-1" type="button" aria-pressed="true">
+<span class="material-symbols-outlined text-[15px]">description</span>
+          Overview
+        </button>
+<button class="py-2 rounded-xl text-xs font-semibold text-slate-600 flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">domain</span>
+          Company
+        </button>
+<button class="py-2 rounded-xl text-xs font-semibold text-slate-600 flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+          Barrier-Free
+        </button>
+</div>
+<!-- Key Quick Info Grid — labels adapt per category (matches Details.js overview tab) -->
+<div class="grid grid-cols-3 gap-2 bg-slate-50/80 rounded-2xl p-3 border border-slate-100">
+<div class="flex flex-col text-left">
+<div class="flex items-center gap-1 text-[10px] font-bold text-slate-400 uppercase">
+<span class="material-symbols-outlined text-[14px] text-amber-700">business_center</span>
+              Opportunity
+            </div>
+<span class="text-[11px] font-bold text-slate-800 mt-1">Job</span>
+</div>
+<div class="flex flex-col text-left">
+<div class="flex items-center gap-1 text-[10px] font-bold text-slate-400 uppercase">
+<span class="material-symbols-outlined text-[14px] text-blue-600">alarm</span>
+              Apply by
+            </div>
+<span class="text-[11px] font-bold text-slate-800 mt-1">Dec 15, 2025</span>
+</div>
+<div class="flex flex-col text-left">
+<div class="flex items-center gap-1 text-[10px] font-bold text-slate-400 uppercase">
+<span class="material-symbols-outlined text-[14px] text-teal-600">home</span>
+              Start date
+            </div>
+<span class="text-[11px] font-bold text-slate-800 mt-1">Jan 12, 2026</span>
+</div>
+</div>
+<!-- Compensation + Location Secondary Info Grid (matches Details.js) -->
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-white border border-slate-200/80 rounded-2xl p-3 flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-[10px] font-bold text-slate-400 uppercase">Salary</span>
+<span class="text-[11px] font-bold text-slate-800 truncate">$125k - $145k</span>
+</div>
+</div>
+<div class="bg-white border border-slate-200/80 rounded-2xl p-3 flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-lime-50 text-lime-700 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-[10px] font-bold text-slate-400 uppercase">Location</span>
+<span class="text-[11px] font-bold text-slate-800 truncate">100% Remote</span>
+</div>
+</div>
+</div>
+<!-- Details Copy with Read More (matches Details.js detailsHeading) -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<h3 class="text-[11px] font-bold text-slate-900 uppercase tracking-wide">Job Details</h3>
+<span class="material-symbols-outlined text-[16px] text-slate-400">more_horiz</span>
+</div>
+<p class="text-xs leading-relaxed text-slate-600">
+            Looking for a Senior Accessibility Specialist to conduct rigorous automated and manual audits across web and mobile design systems…
+            <span class="text-blue-600 font-bold">Read More</span>
+</p>
+</div>
+<!-- Sticky CTA — label adapts per category (matches Details.js CTA) -->
+<div class="pt-1">
+<a href="#" class="w-full bg-[#1d4ed8] text-white rounded-full py-3 px-5 font-bold text-sm flex items-center justify-between">
+<span class="pl-2">Apply Now</span>
+<span class="flex items-center text-blue-200">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-[18px] -ml-2">chevron_right</span>
+<span class="material-symbols-outlined text-[18px] -ml-2 text-white">chevron_right</span>
+</span>
+</a>
+<p class="text-center text-[11px] text-slate-400 mt-2 font-medium">⚡ Accommodations auto-attached to your encrypted application</p>
+</div>
+</aside>
+<!-- END: OpportunityDetailCard -->
+<!-- BEGIN: RelatedFeedSection -->
+<!-- Mobile adaptation of Details.js left REGION: related opportunities feed + pagination -->
+<section>
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-slate-900 tracking-tight">Related opportunities</h2>
+<span class="bg-lime-100 text-lime-900 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-lime-600"></span> Active WCAG Verified
+            </span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-[11px] text-slate-500 font-medium">Sort:</span>
+<button class="bg-white border border-slate-200 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1" type="button">
+            Recently Added
+            <span class="material-symbols-outlined text-[13px] text-slate-400">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Secondary Filter Chips Bar — matches Details.js FILTER_CHIPS -->
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-2">
+<button class="px-3 py-1.5 rounded-full text-[11px] font-bold bg-blue-100 text-blue-700 flex items-center gap-1 shrink-0" type="button" aria-pressed="true">
+            Accessibility Lead
+            <span class="material-symbols-outlined text-[13px]">close</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-[11px] font-semibold bg-white border border-slate-200 text-slate-600 shrink-0" type="button">
+            Customer Success
+          </button>
+<button class="px-3 py-1.5 rounded-full text-[11px] font-semibold bg-white border border-slate-200 text-slate-600 shrink-0" type="button">
+            Frontend &amp; QA
+          </button>
+<button class="px-3 py-1.5 rounded-full text-[11px] font-semibold bg-white border border-slate-200 text-slate-600 shrink-0" type="button">
+            Hybrid
+          </button>
+<button class="px-3 py-1.5 rounded-full text-[11px] font-semibold bg-white border border-slate-200 text-slate-600 shrink-0" type="button">
+            Remote
+          </button>
+</div>
+<!-- Opportunity Feed cards — matches Details.js feed card pattern with View details -->
+<div class="mt-1 space-y-3">
+<article class="bg-white border-2 border-blue-500/80 rounded-3xl p-4 shadow-card ring-4 ring-blue-50">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-sm shrink-0 border border-blue-100">IT</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">InclusionTech Labs</span>
+<span class="inline-flex items-center gap-0.5 text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[11px]">verified</span> Trusted
+                    </span>
+</div>
+<h3 class="text-xs font-bold text-slate-900 mt-0.5 leading-snug">Senior UX Accessibility Specialist</h3>
+<div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+<span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">$125k - $145k/yr</span>
+<span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">100% Remote</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-blue-600 shrink-0">bookmark</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-slate-100 flex flex-wrap items-center gap-1.5">
+<span class="text-[10px] font-bold text-lime-700 bg-lime-50 border border-lime-200/80 px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">visibility</span> Screen Reader Verified
+              </span>
+<span class="text-[10px] font-medium text-slate-700 bg-slate-100 px-2 py-0.5 rounded-full">Flexible Hours</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+<span class="text-[10px] text-slate-400">Posted 2 days ago</span>
+<div class="flex items-center gap-2">
+<span class="text-[10px] font-bold text-blue-600">Selected Preview</span>
+<button class="bg-[#1d4ed8] text-white font-semibold text-[11px] px-3.5 py-1.5 rounded-full" type="button">View details</button>
+</div>
+</div>
+</article>
+<article class="bg-white border border-slate-200/80 rounded-3xl p-4 shadow-card">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-sm shrink-0">EG</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">EquiGlobal Software</span>
+<span class="inline-flex items-center gap-0.5 text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[11px]">verified</span> Trusted
+                    </span>
+</div>
+<h3 class="text-xs font-bold text-slate-900 mt-0.5 leading-snug">Accessibility QA Analyst &amp; Tester</h3>
+<div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+<span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">$55/hr</span>
+<span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Remote</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">bookmark_border</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-slate-100 flex flex-wrap items-center gap-1.5">
+<span class="text-[10px] font-bold text-lime-700 bg-lime-50 border border-lime-200/80 px-2 py-0.5 rounded-full">NVDA/JAWS Tested</span>
+<span class="text-[10px] font-medium text-slate-700 bg-slate-100 px-2 py-0.5 rounded-full">Async Comms</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+<span class="text-[10px] text-slate-400">Posted 3 days ago</span>
+<button class="bg-slate-100 text-slate-700 font-semibold text-[11px] px-3.5 py-1.5 rounded-full" type="button">View details</button>
+</div>
+</article>
+<article class="bg-white border border-slate-200/80 rounded-3xl p-4 shadow-card">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-teal-50 text-teal-800 flex items-center justify-center font-bold text-sm shrink-0">CB</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">CareBridge Health</span>
+<span class="inline-flex items-center gap-0.5 text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[11px]">verified</span> Trusted
+                    </span>
+</div>
+<h3 class="text-xs font-bold text-slate-900 mt-0.5 leading-snug">Customer Success Representative</h3>
+<div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+<span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">$60k - $72k/yr</span>
+<span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Remote</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0">bookmark_border</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-slate-100 flex flex-wrap items-center gap-1.5">
+<span class="text-[10px] font-bold text-lime-700 bg-lime-50 border border-lime-200/80 px-2 py-0.5 rounded-full">Speech-to-Text Support</span>
+<span class="text-[10px] font-medium text-slate-700 bg-slate-100 px-2 py-0.5 rounded-full">Sensory Friendly</span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+<span class="text-[10px] text-slate-400">Posted 5 days ago</span>
+<button class="bg-slate-100 text-slate-700 font-semibold text-[11px] px-3.5 py-1.5 rounded-full" type="button">View details</button>
+</div>
+</article>
+</div>
+<!-- Pagination Controls — matches Details.js pagination -->
+<nav aria-label="Pagination" class="flex items-center justify-center gap-1.5 pt-4 pb-2">
+<button class="px-3 py-1.5 rounded-full text-[11px] font-bold bg-white border border-slate-200 text-slate-600 flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[15px]">chevron_left</span>
+            Previous
+          </button>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-full text-[11px] font-bold bg-[#1d4ed8] text-white" type="button" aria-current="page">1</button>
+<button class="w-7 h-7 rounded-full text-[11px] font-semibold text-slate-600" type="button">2</button>
+<button class="w-7 h-7 rounded-full text-[11px] font-semibold text-slate-600" type="button">3</button>
+</div>
+<button class="px-3 py-1.5 rounded-full text-[11px] font-bold bg-white border border-slate-200 text-slate-600 flex items-center gap-0.5" type="button">
+            Next
+            <span class="material-symbols-outlined text-[15px]">chevron_right</span>
+</button>
+</nav>
+</section>
+<!-- END: RelatedFeedSection -->
+</main>
+<!-- BEGIN: Footer -->
+<!-- Minimal footer — matches Details.js footer -->
+<footer class="mt-auto border-t border-slate-200/80 bg-white px-4 py-5">
+<div class="flex flex-col items-center gap-3 text-center">
+<img alt="AccessAble Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr5881s4MY59MfVF4TM8OXqJ8RABAUG7jHO6uGql_63-aO3pE_UAwsGXnbYKvZj-uE4bnniuPNPTQafrlwKBJco7x3d4jjiEEl33NIBulca-xw7LDWZHrrl91isRVVRwKo-GNPeV2rkLzDqXRbsyvAHvVCrlbWwYYiKMDaapesVmJJmpm0zREBQKqUCK584JTat7QnFAEqqFCJ2AczHG-qpHbPmnGDpie-wkQQYvB976m2E0RsF0FLIMZkv38B5n6-uUQ"/>
+<span class="text-[11px] text-slate-500">© 2025 AccessAble. Universal accessibility &amp; zero-barrier employment standard.</span>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-1.5 text-[11px] font-semibold text-slate-600">
+<a class="hover:text-blue-600" href="#">Employer Accommodation Guide</a>
+<a class="hover:text-blue-600" href="#">Universal Statement</a>
+<a class="hover:text-blue-600" href="#">WCAG 2.2 AAA Audit</a>
+<a class="hover:text-blue-600" href="#">Privacy &amp; Security</a>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</div>
+</body></html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AccessAble - Post an Inclusive Opportunity</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#cad3ff",
+            "on-secondary-fixed": "#131b2e",
+            "on-tertiary-fixed-variant": "#005137",
+            "secondary-container": "#dae2fd",
+            "primary-fixed-dim": "#b7c4ff",
+            "outline": "#747686",
+            "surface-container-low": "#f2f4f6",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#b7c4ff",
+            "tertiary-fixed": "#85f8c4",
+            "tertiary-fixed-dim": "#68dba9",
+            "on-surface": "#191c1e",
+            "secondary-fixed-dim": "#bec6e0",
+            "surface-container-high": "#e6e8ea",
+            "primary-container": "#1d4ed8",
+            "outline-variant": "#c4c5d7",
+            "inverse-surface": "#2d3133",
+            "on-tertiary-container": "#76eab6",
+            "surface-container": "#eceef0",
+            "on-secondary-container": "#5c647a",
+            "on-primary-fixed": "#001551",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#eff1f3",
+            "background": "#f7f9fb",
+            "on-error-container": "#93000a",
+            "surface-tint": "#2151da",
+            "on-secondary-fixed-variant": "#3f465c",
+            "surface": "#f7f9fb",
+            "on-tertiary-fixed": "#002114",
+            "secondary-fixed": "#dae2fd",
+            "primary-fixed": "#dce1ff",
+            "surface-dim": "#d8dadc",
+            "surface-container-highest": "#e0e3e5",
+            "error-container": "#ffdad6",
+            "surface-bright": "#f7f9fb",
+            "on-background": "#191c1e",
+            "surface-variant": "#e0e3e5",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#0039b5",
+            "secondary": "#565e74",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-primary": "#ffffff",
+            "primary": "#0037b0",
+            "tertiary": "#004f35",
+            "on-surface-variant": "#434655",
+            "tertiary-container": "#006948"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "margin": "1rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Accessible focus ring style */
+    *:focus-visible {
+      outline: 3px solid #1d4ed8 !important;
+      outline-offset: 2px !important;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md min-h-screen flex flex-col">
+<!-- Shared Component: TopNavBar Anchor Container -->
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#f8f9fb] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-[#0e111b] text-4xl font-black leading-tight tracking-[-0.033em]">Post an Inclusive Opportunity</p>
+<p class="text-[#4f6296] text-base font-normal leading-normal">
+                  Takes ~3 minutes. All listings are screened for accessibility clarity and verified accommodation commitments before publishing.
+                </p>
+</div>
+</div>
+<div class="pb-3">
+<div class="flex border-b border-[#d0d6e6] px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#4f6296] gap-1 pb-[7px] pt-2.5 flex-1" href="#section-basic">
+<div class="text-[#4f6296]" data-icon="CheckCircle" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewbox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+</svg>
+</div>
+<p class="text-[#4f6296] text-sm font-bold leading-normal tracking-[0.015em]">1. Basic Details</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#4f6296] gap-1 pb-[7px] pt-2.5 flex-1" href="#section-logistics">
+<div class="text-[#4f6296]" data-icon="CheckCircle" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewbox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+</svg>
+</div>
+<p class="text-[#4f6296] text-sm font-bold leading-normal tracking-[0.015em]">2. Logistics &amp; Dates</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#1d4fd8] text-[#0e111b] gap-1 pb-[7px] pt-2.5 flex-1" href="#section-accessibility">
+<div class="text-[#0e111b]" data-icon="Wheelchair" data-size="24px" data-weight="fill">
+<svg fill="currentColor" height="24px" viewbox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M250.53,199.59l-24,8a8,8,0,0,1-9.69-4L187.05,144H104a8,8,0,0,1-8-8V106.34A56,56,0,0,0,112,216c25.91,0,50.09-18.05,56.25-42a8,8,0,1,1,15.5,4c-8.06,31.3-38.23,54-71.75,54A72,72,0,0,1,96,89.81v-19a28,28,0,1,1,16,0V88h56a8,8,0,0,1,0,16H112v24h80a8,8,0,0,1,7.15,4.42l28.9,57.8,17.42-5.81a8,8,0,0,1,5.06,15.18Z"></path>
+</svg>
+</div>
+<p class="text-[#0e111b] text-sm font-bold leading-normal tracking-[0.015em]">3. Accessibility &amp; Accommodations</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#4f6296] gap-1 pb-[7px] pt-2.5 flex-1" href="#section-description">
+<div class="text-[#4f6296]" data-icon="Article" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewbox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"></path>
+</svg>
+</div>
+<p class="text-[#4f6296] text-sm font-bold leading-normal tracking-[0.015em]">4. Description &amp; Apply</p>
+</a>
+</div>
+</div>
+<!-- Main Application Form Body -->
+<form class="flex flex-col gap-8 px-4 pb-12" id="opportunityForm" onsubmit="event.preventDefault();">
+<!-- SECTION 1: BASIC INFORMATION -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm" id="section-basic">
+<div class="flex items-center justify-between border-b border-surface-container pb-4">
+<div>
+<h3 class="font-headline-md text-primary font-bold">Basic Opportunity Details</h3>
+<p class="font-body-sm text-secondary">Clear descriptive titles ensure high discoverability across screen-readers.</p>
+</div>
+</div>
+<!-- Opportunity Title Input -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<label class="font-label-lg text-on-surface" for="opp-title">
+          Opportunity Title <span aria-hidden="true" class="text-error">*</span>
+</label>
+<span class="text-xs text-secondary" id="title-char-count">0 / 120 characters</span>
+</div>
+<input aria-describedby="title-help" class="w-full rounded-lg border-outline-variant bg-surface text-on-surface px-4 py-3 font-body-md focus:border-primary focus:ring-2 focus:ring-primary-fixed" id="opp-title" maxlength="120" name="opportunity_title" oninput="document.getElementById('title-char-count').innerText = this.value.length + ' / 120 characters'" placeholder="e.g., Senior Accessibility Engineer (Remote) or Youth Inclusive Tech Bootcamp 2025" required="" type="text"/>
+<span class="text-xs text-secondary" id="title-help">Specify role, organization, and primary focus area.</span>
+</div>
+<!-- Category Selector -->
+<div class="flex flex-col gap-3">
+<label class="font-label-lg text-on-surface">Category Classification <span class="text-error">*</span></label>
+<div aria-label="Category Selection" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3" role="radiogroup">
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 border border-primary bg-secondary-fixed/30 rounded-lg hover:border-primary transition-all">
+<input checked="" class="mt-1 text-primary focus:ring-primary" name="category" type="radio" value="job"/>
+<div>
+<div class="font-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">work</span>
+              Job / Internship
+            </div>
+<p class="text-xs text-secondary">Full-time, contract, or paid internships</p>
+</div>
+</label>
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 border border-outline-variant rounded-lg hover:border-primary hover:bg-surface-container-low transition-all">
+<input class="mt-1 text-primary focus:ring-primary" name="category" type="radio" value="event"/>
+<div>
+<div class="font-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">event</span>
+              Event / Webinar
+            </div>
+<p class="text-xs text-secondary">Workshops, summits, and symposiums</p>
+</div>
+</label>
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 border border-outline-variant rounded-lg hover:border-primary hover:bg-surface-container-low transition-all">
+<input class="mt-1 text-primary focus:ring-primary" name="category" type="radio" value="grant"/>
+<div>
+<div class="font-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">payments</span>
+              Grant / Funding
+            </div>
+<p class="text-xs text-secondary">Direct assistance, bursaries, and seed funds</p>
+</div>
+</label>
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 border border-outline-variant rounded-lg hover:border-primary hover:bg-surface-container-low transition-all">
+<input class="mt-1 text-primary focus:ring-primary" name="category" type="radio" value="training"/>
+<div>
+<div class="font-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+              Training / Fellowship
+            </div>
+<p class="text-xs text-secondary">Vocational courses, upskilling cohorts</p>
+</div>
+</label>
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 border border-outline-variant rounded-lg hover:border-primary hover:bg-surface-container-low transition-all sm:col-span-2 md:col-span-2">
+<input class="mt-1 text-primary focus:ring-primary" name="category" type="radio" value="aid"/>
+<div>
+<div class="font-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">campaign</span>
+              Public Program / Beneficiary Aid
+            </div>
+<p class="text-xs text-secondary">Assistive device distribution, community support, or government affirmative action</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Organization Profile Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-on-surface" for="org-name">Organization / Company Name <span class="text-error">*</span></label>
+<input class="w-full rounded-lg border-outline-variant bg-surface text-on-surface px-4 py-2.5 font-body-md focus:border-primary focus:ring-primary" id="org-name" name="org_name" placeholder="e.g. Kenya Inclusive Tech Trust" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-on-surface" for="org-url">Organization Website URL</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface text-on-surface px-4 py-2.5 font-body-md focus:border-primary focus:ring-primary" id="org-url" name="org_url" placeholder="https://example.org" type="url"/>
+</div>
+</div>
+<!-- Logo Upload Dropzone -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-on-surface">Organization Brand Logo</label>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-6 flex flex-col items-center justify-center text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="size-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">cloud_upload</span>
+</div>
+<p class="font-label-md text-on-surface">
+<span class="text-primary font-bold hover:underline">Click to upload</span> or drag and drop brand logo
+        </p>
+<p class="text-xs text-secondary mt-1">SVG, PNG, or JPG (High contrast monochrome preferred, max 5MB)</p>
+</div>
+</div>
+</section>
+<!-- SECTION 2: FORMAT, LOCATION & TIMELINES -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm" id="section-logistics">
+<div class="flex items-center justify-between border-b border-surface-container pb-4">
+<div>
+<h3 class="font-headline-md text-primary font-bold">2. Format, Location &amp; Dates</h3>
+<p class="font-body-sm text-secondary">Define where and when this opportunity takes place with full accessibility clarity.</p>
+</div>
+</div>
+<!-- Delivery Mode Radio Pills -->
+<div class="flex flex-col gap-3">
+<label class="font-label-lg text-on-surface">Delivery Mode <span class="text-error">*</span></label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<label class="cursor-pointer border-2 border-primary bg-secondary-container/40 p-4 rounded-lg flex flex-col gap-1 text-left">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-primary-container font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xl">language</span> 100% Remote
+            </span>
+<input checked="" class="text-primary focus:ring-primary" name="delivery_mode" type="radio" value="remote"/>
+</div>
+<p class="text-xs text-secondary mt-1">Digital participation via accessible platforms worldwide or within territory.</p>
+</label>
+<label class="cursor-pointer border border-outline-variant hover:border-primary p-4 rounded-lg flex flex-col gap-1 text-left">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xl">location_city</span> On-Site Physical
+            </span>
+<input class="text-primary focus:ring-primary" name="delivery_mode" type="radio" value="onsite"/>
+</div>
+<p class="text-xs text-secondary mt-1">Held at a verified barrier-free physical venue or workplace.</p>
+</label>
+<label class="cursor-pointer border border-outline-variant hover:border-primary p-4 rounded-lg flex flex-col gap-1 text-left">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xl">sync_alt</span> Hybrid Model
+            </span>
+<input class="text-primary focus:ring-primary" name="delivery_mode" type="radio" value="hybrid"/>
+</div>
+<p class="text-xs text-secondary mt-1">Choice of in-person attendance or full remote digital streaming.</p>
+</label>
+</div>
+</div>
+<!-- Physical Location Address (Conditional appearance / accessible) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-on-surface" for="venue-address">Physical Venue &amp; Accessibility Access Directions</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface text-on-surface px-4 py-2.5 font-body-md focus:border-primary focus:ring-primary" id="venue-address" placeholder="e.g., 4th Floor, All-Access Center, Westlands, Nairobi. (Ramp access on North Entrance)" type="text"/>
+<span class="text-xs text-secondary">Include landmark nearest public transit station and specific ramp entry instructions.</span>
+</div>
+<!-- Structured 3-field Dates Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-2">
+<!-- Application Deadline Field -->
+<fieldset class="border border-surface-container-high rounded-lg p-4 bg-surface-container-lowest">
+<legend class="font-label-md text-on-surface font-bold px-1.5">Application Deadline <span class="text-error">*</span></legend>
+<p class="text-xs text-secondary mb-3">Final date to accept accommodations requests and candidacies.</p>
+<div class="grid grid-cols-3 gap-2">
+<div>
+<label class="text-[11px] font-bold uppercase tracking-wider text-secondary" for="deadline-day">Day (DD)</label>
+<input class="w-full text-center rounded border-outline-variant bg-surface py-2 focus:ring-primary" id="deadline-day" max="31" min="1" placeholder="28" type="number"/>
+</div>
+<div>
+<label class="text-[11px] font-bold uppercase tracking-wider text-secondary" for="deadline-month">Month (MM)</label>
+<input class="w-full text-center rounded border-outline-variant bg-surface py-2 focus:ring-primary" id="deadline-month" max="12" min="1" placeholder="11" type="number"/>
+</div>
+<div>
+<label class="text-[11px] font-bold uppercase tracking-wider text-secondary" for="deadline-year">Year (YYYY)</label>
+<input class="w-full text-center rounded border-outline-variant bg-surface py-2 focus:ring-primary" id="deadline-year" max="2030" min="2025" placeholder="2025" type="number"/>
+</div>
+</div>
+</fieldset>
+<!-- Program Start / Work Commencement Date -->
+<fieldset class="border border-surface-container-high rounded-lg p-4 bg-surface-container-lowest">
+<legend class="font-label-md text-on-surface font-bold px-1.5">Start Date / Commencement</legend>
+<p class="text-xs text-secondary mb-3">Anticipated orientation or start of duties.</p>
+<div class="grid grid-cols-3 gap-2">
+<div>
+<label class="text-[11px] font-bold uppercase tracking-wider text-secondary" for="start-day">Day (DD)</label>
+<input class="w-full text-center rounded border-outline-variant bg-surface py-2 focus:ring-primary" id="start-day" max="31" min="1" placeholder="15" type="number"/>
+</div>
+<div>
+<label class="text-[11px] font-bold uppercase tracking-wider text-secondary" for="start-month">Month (MM)</label>
+<input class="w-full text-center rounded border-outline-variant bg-surface py-2 focus:ring-primary" id="start-month" max="12" min="1" placeholder="12" type="number"/>
+</div>
+<div>
+<label class="text-[11px] font-bold uppercase tracking-wider text-secondary" for="start-year">Year (YYYY)</label>
+<input class="w-full text-center rounded border-outline-variant bg-surface py-2 focus:ring-primary" id="start-year" max="2030" min="2025" placeholder="2025" type="number"/>
+</div>
+</div>
+</fieldset>
+</div>
+<!-- Compensation & Fees with Transparency Badge -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+<label class="font-label-lg text-on-surface" for="compensation-input">Compensation, Stipend, or Admission Fee</label>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm rounded-full w-fit">
+<span class="material-symbols-outlined text-sm">verified</span>
+          Pay transparency builds trust with PWD communities
+        </span>
+</div>
+<div class="relative rounded-lg shadow-sm">
+<input class="w-full rounded-lg border-outline-variant bg-surface text-on-surface px-4 py-2.5 font-body-md focus:border-primary focus:ring-primary" id="compensation-input" placeholder="e.g. Ksh 75,000 / month, $1,500 Honorarium, or 100% Free Admission" type="text"/>
+</div>
+</div>
+</section>
+<!-- SECTION 3: COMPREHENSIVE ACCESSIBILITY & ACCOMMODATIONS (HIGHLIGHTED STEP) -->
+<section class="bg-surface-container-lowest border-2 border-primary rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-md relative" id="section-accessibility">
+<div class="absolute -top-3.5 left-6 bg-primary text-on-primary px-3 py-0.5 rounded-full font-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">verified_user</span> Essential Inclusion Standard
+    </div>
+<div class="flex items-center justify-between border-b border-surface-container pb-4 pt-1">
+<div>
+<h3 class="font-headline-md text-primary font-bold">3. Comprehensive Accommodations Checklist</h3>
+<p class="font-body-sm text-secondary">
+          AccessAble requires verified physical and sensory accommodations. Check all items that your organization guarantees for candidates.
+        </p>
+</div>
+</div>
+<!-- 4 Grouped Checklist Sections -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Group A: Mobility & Physical Access -->
+<div class="bg-surface-container-low border border-outline-variant/60 rounded-xl p-5 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface border-b border-outline-variant/30 pb-2">
+<span class="material-symbols-outlined text-primary text-xl">accessible</span>
+<h4 class="font-label-lg font-bold">A. Mobility &amp; Physical Access</h4>
+</div>
+<div class="flex flex-col gap-2.5">
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="mobility_restrooms" type="checkbox"/>
+<span class="text-on-surface">Wheelchair-accessible entrance and ADA restrooms</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="mobility_stepfree" type="checkbox"/>
+<span class="text-on-surface">Step-free access &amp; operational wide elevators</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input class="rounded text-primary focus:ring-primary size-4" name="mobility_parking" type="checkbox"/>
+<span class="text-on-surface">Dedicated reserved accessible parking bay</span>
+</label>
+</div>
+<div class="mt-2">
+<label class="text-xs font-semibold text-secondary block mb-1" for="mobility-notes">Mobility notes &amp; dimensions:</label>
+<input class="w-full text-xs rounded border-outline-variant bg-surface px-3 py-2 text-on-surface focus:border-primary focus:ring-primary" id="mobility-notes" placeholder="e.g. Ramp slope 1:12, entrance doors 36-inch width with auto-push button" type="text"/>
+</div>
+</div>
+<!-- Group B: Deaf & Hard of Hearing Support -->
+<div class="bg-surface-container-low border border-outline-variant/60 rounded-xl p-5 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface border-b border-outline-variant/30 pb-2">
+<span class="material-symbols-outlined text-primary text-xl">hearing</span>
+<h4 class="font-label-lg font-bold">B. Deaf &amp; Hard of Hearing Support</h4>
+</div>
+<div class="flex flex-col gap-2.5">
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="sli_support" type="checkbox"/>
+<span class="text-on-surface">Sign Language Interpreters (KSL / ASL / ISL)</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="cart_captions" type="checkbox"/>
+<span class="text-on-surface">Live CART human captioning or verified real-time CC</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input class="rounded text-primary focus:ring-primary size-4" name="hearing_loop" type="checkbox"/>
+<span class="text-on-surface">Telecoil / Assistive listening loop installed</span>
+</label>
+</div>
+<div class="mt-2">
+<label class="text-xs font-semibold text-secondary block mb-1" for="hearing-notes">Hearing accommodations details:</label>
+<input class="w-full text-xs rounded border-outline-variant bg-surface px-3 py-2 text-on-surface focus:border-primary focus:ring-primary" id="hearing-notes" placeholder="e.g. Two certified KSL interpreters on stage; transcript shared within 2 hours" type="text"/>
+</div>
+</div>
+<!-- Group C: Blind & Low Vision Support -->
+<div class="bg-surface-container-low border border-outline-variant/60 rounded-xl p-5 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface border-b border-outline-variant/30 pb-2">
+<span class="material-symbols-outlined text-primary text-xl">visibility</span>
+<h4 class="font-label-lg font-bold">C. Blind &amp; Low Vision Support</h4>
+</div>
+<div class="flex flex-col gap-2.5">
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="screen_reader_docs" type="checkbox"/>
+<span class="text-on-surface">Screen-reader tested digital PDFs &amp; semantic docs</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input class="rounded text-primary focus:ring-primary size-4" name="braille_materials" type="checkbox"/>
+<span class="text-on-surface">Large print (18pt+) &amp; Braille formats on request</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="audio_descriptions" type="checkbox"/>
+<span class="text-on-surface">Live audio description for presentations and diagrams</span>
+</label>
+</div>
+<div class="mt-2">
+<label class="text-xs font-semibold text-secondary block mb-1" for="vision-notes">Low vision accommodation notes:</label>
+<input class="w-full text-xs rounded border-outline-variant bg-surface px-3 py-2 text-on-surface focus:border-primary focus:ring-primary" id="vision-notes" placeholder="e.g. Accessible slides and handouts emailed 48 hours prior with full image ALT text" type="text"/>
+</div>
+</div>
+<!-- Group D: Neurodivergent & Sensory Considerations -->
+<div class="bg-surface-container-low border border-outline-variant/60 rounded-xl p-5 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface border-b border-outline-variant/30 pb-2">
+<span class="material-symbols-outlined text-primary text-xl">psychology</span>
+<h4 class="font-label-lg font-bold">D. Neurodivergent &amp; Sensory Support</h4>
+</div>
+<div class="flex flex-col gap-2.5">
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="quiet_room" type="checkbox"/>
+<span class="text-on-surface">Dedicated low-stimulus quiet room / sensory decompression area</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="pre_agenda" type="checkbox"/>
+<span class="text-on-surface">Predictable agenda &amp; interview questions provided in advance</span>
+</label>
+<label class="flex items-center gap-3 text-sm cursor-pointer select-none">
+<input checked="" class="rounded text-primary focus:ring-primary size-4" name="camera_optional" type="checkbox"/>
+<span class="text-on-surface">Flexible work hours &amp; camera-optional meeting policy</span>
+</label>
+</div>
+<div class="mt-2">
+<label class="text-xs font-semibold text-secondary block mb-1" for="sensory-notes">Sensory considerations notes:</label>
+<input class="w-full text-xs rounded border-outline-variant bg-surface px-3 py-2 text-on-surface focus:border-primary focus:ring-primary" id="sensory-notes" placeholder="e.g. Fluorescent flicker-free environment, sensory breaks scheduled every 45 mins" type="text"/>
+</div>
+</div>
+</div>
+<!-- Accommodation Coordinator Contact Card -->
+<div class="bg-secondary-fixed/20 border border-secondary-container rounded-xl p-5 flex flex-col gap-4 mt-2">
+<div class="flex items-center gap-2 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-primary text-2xl">support_agent</span>
+<div>
+<h4 class="font-label-lg font-bold">Designated Accessibility Coordinator</h4>
+<p class="text-xs text-secondary">Applicants with specific access questions can reach this point person directly.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div>
+<label class="text-xs font-bold text-on-surface block mb-1" for="coord-name">Coordinator Full Name <span class="text-error">*</span></label>
+<input class="w-full text-sm rounded border-outline-variant bg-surface px-3 py-2 focus:ring-primary" id="coord-name" placeholder="Grace M., DEI Officer" type="text"/>
+</div>
+<div>
+<label class="text-xs font-bold text-on-surface block mb-1" for="coord-contact">Direct Email or WhatsApp <span class="text-error">*</span></label>
+<input class="w-full text-sm rounded border-outline-variant bg-surface px-3 py-2 focus:ring-primary" id="coord-contact" placeholder="accommodations@org.or.ke" type="text"/>
+</div>
+<div>
+<label class="text-xs font-bold text-on-surface block mb-1" for="coord-notice">Notice Required for Special Requests</label>
+<select class="w-full text-sm rounded border-outline-variant bg-surface px-3 py-2 focus:ring-primary" id="coord-notice">
+<option>At least 2 business days</option>
+<option selected="">At least 3 business days</option>
+<option>At least 1 week prior</option>
+<option>Same-day accommodations supported</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FULL DESCRIPTION & APPLICATION METHOD -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm" id="section-description">
+<div class="flex items-center justify-between border-b border-surface-container pb-4">
+<div>
+<h3 class="font-headline-md text-primary font-bold">4. Full Description &amp; Application Procedure</h3>
+<p class="font-body-sm text-secondary">Write clear, jargon-free role descriptions with accessible formatting.</p>
+</div>
+</div>
+<!-- Rich Text Mockup / Formatting Bar -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-lg text-on-surface" for="opportunity-desc">Full Opportunity Description <span class="text-error">*</span></label>
+<span class="text-xs text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Plain Language Recommended
+        </span>
+</div>
+<!-- Formatting Action Bar -->
+<div class="border border-outline-variant rounded-t-lg bg-surface-container-low px-3 py-1.5 flex flex-wrap items-center gap-1 text-on-surface">
+<button aria-label="Bold" class="p-1.5 hover:bg-surface-container rounded text-sm font-bold" title="Bold" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button aria-label="Italic" class="p-1.5 hover:bg-surface-container rounded text-sm italic" title="Italic" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<div class="h-4 w-px bg-outline-variant mx-1"></div>
+<button aria-label="Heading 2" class="p-1.5 hover:bg-surface-container rounded text-xs font-bold" title="Heading 2" type="button">H2</button>
+<button aria-label="Heading 3" class="p-1.5 hover:bg-surface-container rounded text-xs font-bold" title="Heading 3" type="button">H3</button>
+<div class="h-4 w-px bg-outline-variant mx-1"></div>
+<button aria-label="Bullet List" class="p-1.5 hover:bg-surface-container rounded" title="Bullet List" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+<button aria-label="Numbered List" class="p-1.5 hover:bg-surface-container rounded" title="Numbered List" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_numbered</span>
+</button>
+<div class="h-4 w-px bg-outline-variant mx-1"></div>
+<button aria-label="Insert Link" class="p-1.5 hover:bg-surface-container rounded" title="Insert Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button aria-label="Code block" class="p-1.5 hover:bg-surface-container rounded" title="Code snippet" type="button">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</button>
+</div>
+<!-- Textarea with accessible helper placeholder -->
+<textarea class="w-full rounded-b-lg border-t-0 border-outline-variant bg-surface text-on-surface px-4 py-3 font-body-md focus:border-primary focus:ring-primary" id="opportunity-desc" placeholder="Provide the opportunity scope, responsibilities, physical/workplace expectations, required skills, and team support structures. Emphasize that persons with disabilities and neurodivergent individuals are strongly encouraged to apply." rows="8"></textarea>
+<span class="text-xs text-secondary">Markdown formatting is fully supported. Avoid using images without descriptions or decorative jargon.</span>
+</div>
+<!-- Application URL & Multimodal Option -->
+<div class="flex flex-col gap-4 pt-2">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-on-surface" for="app-url">Primary Application or Registration URL <span class="text-error">*</span></label>
+<input class="w-full rounded-lg border-outline-variant bg-surface text-on-surface px-4 py-2.5 font-body-md focus:border-primary focus:ring-primary" id="app-url" placeholder="https://company.applytojob.com/apply/xyz123 or https://forms.gle/..." type="url"/>
+<span class="text-xs text-secondary">Must be an accessible web portal or direct application form.</span>
+</div>
+<!-- Multimodal Application Toggle Box -->
+<div class="border border-tertiary-container/30 bg-tertiary-fixed/10 p-4 rounded-lg flex items-start gap-3">
+<input checked="" class="mt-1 rounded text-tertiary focus:ring-tertiary size-4" id="multimodal-check" type="checkbox"/>
+<div>
+<label class="font-label-md text-on-surface font-bold block cursor-pointer" for="multimodal-check">
+            Support Multimodal Alternative Submissions
+          </label>
+<p class="text-xs text-secondary mt-0.5">
+            Accept voice note applications, video introductions with sign language, or plain-text email CVs for candidates with visual or motor impairments who face portal barriers.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: VALIDATION & SUBMISSION -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm" id="section-review">
+<div class="flex items-center justify-between border-b border-surface-container pb-4">
+<div>
+<h3 class="font-headline-md text-primary font-bold">5. Certification &amp; Submission</h3>
+<p class="font-body-sm text-secondary">Final review before your listing undergoes expedited 2-hour accessibility screening.</p>
+</div>
+</div>
+<!-- Poster Agreement Card -->
+<div class="bg-surface-container-low border border-outline-variant rounded-xl p-5 flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<input class="mt-1 size-5 rounded text-primary focus:ring-primary border-outline" id="pledge-agree" required="" type="checkbox"/>
+<label class="font-body-sm text-on-surface cursor-pointer leading-relaxed" for="pledge-agree">
+<strong class="font-bold text-on-surface block mb-1">AccessAble True-Inclusion Certification Guarantee</strong>
+          I solemnly certify and confirm on behalf of my organization that all accessibility accommodations marked on this form are active, funded, and verified. I understand that listings found to offer tokenistic or misleading accommodations will be revoked from the platform immediately.
+        </label>
+</div>
+<div class="flex items-center gap-2 text-xs text-secondary bg-surface-container px-3 py-2 rounded">
+<span class="material-symbols-outlined text-[18px] text-tertiary">gavel</span>
+<span>Protected under National Disability Non-Discrimination Provisions &amp; WCAG 2.2 Standards.</span>
+</div>
+</div>
+<!-- Actions & Submission Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-2 text-xs text-secondary">
+<span class="material-symbols-outlined text-primary text-base">schedule</span>
+<span>Estimated review time: <strong>&lt; 2 hours</strong> by our inclusive screening board.</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-outline font-label-md font-semibold text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+          Save Draft
+        </button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-primary font-label-md font-bold shadow hover:bg-primary transition-all focus:ring-4 focus:ring-primary-fixed" type="submit">
+<span>Submit for Review</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- Accessible Footer Anchor Component -->
+<footer class="bg-surface-container-highest border-t border-outline-variant mt-auto py-10 px-6 sm:px-12 lg:px-24 text-on-surface">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="flex items-center gap-3">
+<div class="size-6 bg-primary text-on-primary flex items-center justify-center rounded font-bold text-xs">A+</div>
+<span class="font-headline-sm font-bold tracking-tight text-on-surface">AccessAble PWD Platform</span>
+</div>
+<p class="text-xs text-secondary text-center md:text-left">
+        Bridging opportunities and barrier-free career ecosystems across East Africa and globally.
+      </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 text-xs text-secondary">
+<a class="hover:text-primary transition-colors" href="#">WCAG 2.2 AAA Guidelines</a>
+<a class="hover:text-primary transition-colors" href="#">Accommodation Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Screen Reader Shortcuts</a>
+<a class="hover:text-primary transition-colors" href="#">Data Privacy &amp; Dignity</a>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border border-outline-variant bg-surface">
+<span class="material-symbols-outlined text-tertiary text-base">verified</span>
+<span>WCAG 2.2 AAA Validated</span>
+</div>
+</div>
+</footer>
+<script>
+  // Dynamic step indicator scroll interaction
+  const stepLinks = document.querySelectorAll('a[href^="#section-"]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('section[id^="section-"]');
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    stepLinks.forEach(link => {
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('border-b-[#1d4fd8]', 'text-[#0e111b]');
+        link.classList.remove('border-b-transparent', 'text-[#4f6296]');
+      }
+    });
+  });
+</script>
+</body></html>
